@@ -31,22 +31,22 @@ export default function Hero() {
         ></ParallaxLayer>
 
         <ParallaxLayer offset={0.7} speed={2.5}>
-          <img src={img1} alt="" className="h-60 m-auto"/>
+          <img src={img1} alt="" className="hidden lg:block h-60 m-auto"/>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.8} speed={3.5}>
+        <ParallaxLayer offset={0.8} speed={1.5}>
           <img src={img2} alt="" className="h-60 "/>
         </ParallaxLayer>
         <ParallaxLayer offset={0.9} speed={4}>
-          <img src={img3} alt="" className="h-60 m-auto"/>
+          <img src={img3} alt="" className="hidden lg:block h-60 m-auto "/>
         </ParallaxLayer>
         <ParallaxLayer offset={0.95} speed={3}>
           <img src={img4} alt="" className="h-60 float-right"/>
         </ParallaxLayer>
         <ParallaxLayer offset={0.95} speed={3}>
-          <img src={img5} alt="" className="hidden lg:block h-60 p-5"/>
+          <img src={img5} alt="" className="hidden lg:block h-60 pl-10"/>
         </ParallaxLayer>
         <ParallaxLayer offset={0.7} speed={2.5}>
-          <img src={img6} alt="" className="hidden lg:block h-60 p-5 float-right"/>
+          <img src={img6} alt="" className=" h-60  float-right pr-10"/>
         </ParallaxLayer>
 
         <ParallaxLayer offset={0.6} speed={1}>

@@ -14,12 +14,12 @@ export default function HeaderFloat() {
           style={divStyle}
         >
           <h1 className="text-5xl text-lime-500 md:text-6xl xl:text-7xl font-bold tracking-tight mb-12">
-            AUST
+          <span className="bg-white text-black">AUST</span>
             <br />
-            <span className="text-red-600">Rover Challange 2022</span>
+            <span className="bg-green-600 text-white ">Rover Challange 2022</span>
           </h1>
           <a
-            className="inline-block px-7 py-3 mb-2 md:mb-0 mr-0 md:mr-2 bg-lime-600 text-white font-bold text-2xl  leading-snug uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-rgreened-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
+            className="inline-block px-7 py-3 mb-2 md:mb-0 mr-0 md:mr-2 bg-red-600 text-white font-bold text-2xl  leading-snug uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-rgreened-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
             data-mdb-ripple="true"
             data-mdb-ripple-color="light"
             href="#!"
@@ -29,8 +29,6 @@ export default function HeaderFloat() {
           </a>
           <a
             className="btn btn-info text-2xl"
-            data-mdb-ripple="true"
-            data-mdb-ripple-color="light"
             href="#!"
           >
             Rule Book
