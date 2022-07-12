@@ -10,13 +10,13 @@ export default function HeaderFloat() {
     <div className="container w-fit mx-auto px-6 md:px-12 xl:px-32">
       <div className="text-center ">
         <div
-          className="block rounded-lg shadow-lg px-6 py-12 md:py-16 md:px-12"
+          className="block rounded-lg shadow-lg py-12 md:py-16 md:px-12"
           style={divStyle}
         >
-          <h1 className="text-5xl text-lime-500 md:text-6xl xl:text-7xl font-bold tracking-tight mb-12">
-          <span className="bg-white text-black">AUST</span>
+          <h1 className="tracking-tight mb-8 font-ethnocentric">
+          <span className="text-4xl md:text-5xl xl:text-8xl  text-green-500 p-2 fontPirulen italic font-bold lg:pb-5">A U  S  T</span>
             <br />
-            <span className="bg-green-600 text-white ">Rover Challange 2022</span>
+            <span className="text-xl md:text-4xl xl:text-6xl bg-std-green text-black fontEthno italic">Rover Challenge 2022</span>
           </h1>
           <a
             className="inline-block px-7 py-3 mb-2 md:mb-0 mr-0 md:mr-2 bg-red-600 text-white font-bold text-2xl  leading-snug uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-rgreened-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
