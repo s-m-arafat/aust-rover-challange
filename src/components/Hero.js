@@ -30,7 +30,7 @@ export default function Hero() {
           <img
             src={img1}
             alt=""
-            className="h-32 md:h-60  lg:block ml-5 lg:m-auto"
+            className="h-32 md:h-60 lg:block ml-5 lg:m-auto"
           />
         </ParallaxLayer>
         <ParallaxLayer offset={0.8} speed={1.5}>
@@ -62,8 +62,8 @@ export default function Hero() {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={0.999}
-          speed={0.7}
+          offset={0.999999999}
+          speed={0.9}
           className="bg-center"
           style={{
             height: "400px",
@@ -71,7 +71,7 @@ export default function Hero() {
             backgroundImage: `url(${headerImage2})`
           }}
         ></ParallaxLayer>
-        <ParallaxLayer offset={0.999} speed={0.3}>
+        <ParallaxLayer offset={0.999999999} speed={0.7}>
           <Prize />
         </ParallaxLayer>
       </Parallax>
