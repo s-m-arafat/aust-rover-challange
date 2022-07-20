@@ -1,15 +1,14 @@
 import React from "react";
 import "./App.css";
 import "tw-elements";
+import Home from "./components/Home";
+import { Routes, Route } from "react-router-dom";
 
-import Hero from "./components/Hero";
-
-function App() {
+export default function App() {
   return (
-    <div>
-      <Hero />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="home" element={<Home />} />
+    </Routes>
   );
 }
-
-export default App;

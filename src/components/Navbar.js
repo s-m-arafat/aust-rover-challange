@@ -1,7 +1,15 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../static/logo.png";
 
 export default function Navbar() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(
+      "https://mobile.facebook.com/events/1072789436680896?__referral_info_referrer_type=dashboard&__referral_info_mechanism=home_tab_hero_events&_rdc=1&_rdr"
+    );
+  };
   return (
     <nav className="navbar navbar-expand-lg shadow-md py-2 bg-black relative flex items-center w-full justify-between">
       <div className="w-full flex flex-wrap items-center justify-between">
@@ -30,9 +38,9 @@ export default function Navbar() {
               ></path>
             </svg>
           </button>
-          <a className="navbar-brand text-blue-600" href="#!">
+          <Link className="navbar-brand text-blue-600" to="/">
             <img alt="logo" src={logo} className="h-14 md:h-20" />
-          </a>
+          </Link>
         </div>
         <div
           className="navbar-collapse collapse grow navbar-center"
@@ -42,11 +50,11 @@ export default function Navbar() {
             <li className="nav-item">
               <a
                 className="nav-link block pr-2 lg:px-2 py-2 text-green-400 hover:text-green-700 focus:text-green-700 transition duration-150 ease-in-out"
-                href="#!"
+                href="#segments"
                 data-mdb-ripple="true"
                 data-mdb-ripple-color="light"
               >
-                Dashboard
+                Segments
               </a>
             </li>
             <li className="nav-item">
@@ -56,23 +64,14 @@ export default function Navbar() {
                 data-mdb-ripple="true"
                 data-mdb-ripple-color="light"
               >
-                Team
-              </a>
-            </li>
-            <li className="nav-item mb-2 lg:mb-0">
-              <a
-                className="nav-link block pr-2 lg:px-2 py-2 text-green-400 hover:text-green-700 focus:text-green-700 transition duration-150 ease-in-out"
-                href="#!"
-                data-mdb-ripple="true"
-                data-mdb-ripple-color="light"
-              >
-                Projects
+                Rule Book
               </a>
             </li>
           </ul>
         </div>
         <div className="navbar-end  lg:ml-auto lg:w-1/4">
           <button
+            onClick={handleClick}
             type="button"
             className="btn inline-block px-6 py-2.5 bg-red-600 text-white font-bold text-sm lg:text-xl leading-tight uppercase rounded shadow-md hover:bg-red-600 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
             data-mdb-ripple="true"

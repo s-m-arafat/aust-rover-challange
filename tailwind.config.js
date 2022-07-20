@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       backgroundColor:{
         "std-green": "#00bb54",
-        "std-green-tx": "	hsl(147, 100%, 37%, 0.5)"
+        "std-green-tx": "	hsl(147, 100%, 37%, 0.4)"
       },
       backgroundImage: {
         "header-img": "url('/src/static/header.png')",

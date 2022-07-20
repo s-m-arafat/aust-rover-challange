@@ -1,9 +1,5 @@
-import React from "react";
-// import headerImage from "../static/header.png";
 import headerImage2 from "../static/header2.jpg";
-
 import HeaderFloat from "./HeaderFloat";
-import Navbar from "./Navbar";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import img1 from "../static/1.png";
 import img2 from "../static/2.png";
@@ -11,12 +7,17 @@ import img3 from "../static/3.png";
 import img4 from "../static/4.png";
 import img5 from "../static/5.png";
 import img6 from "../static/6.png";
+import rover from "../static/rover.jpg";
 import Prize from "./Prize";
+import Content from "./Content";
+import Segments from "./Segments";
+import Footer from "./Footer";
+import useWindowDimensions from "./useWinDimension";
 export default function Hero() {
+  const { width } = useWindowDimensions();
   return (
     <div className="">
-      <Navbar />
-      <Parallax pages={1.8} className="bg-white">
+      <Parallax pages={width > 700 ? 2.2 : 2.85} className="bg-white">
         <ParallaxLayer
           speed={2}
           className="bg-center bg-header-img"
@@ -62,17 +63,40 @@ export default function Hero() {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={0.999999999}
+          offset={0.99999999999}
           speed={0.9}
+          factor={0.25}
           className="bg-center"
           style={{
             height: "400px",
             backgroundSize: "cover",
-            backgroundImage: `url(${headerImage2})`
+            backgroundImage: `url(${headerImage2})`,
           }}
         ></ParallaxLayer>
-        <ParallaxLayer offset={0.999999999} speed={0.7}>
+        <ParallaxLayer offset={0.999999999} speed={0.6} factor={0.25}>
           <Prize />
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={1}
+          speed={1}
+          className="bg-center"
+          style={{
+            height: "400px",
+            backgroundSize: "cover",
+            backgroundImage: `url(${rover})`,
+            marginTop: "-75px",
+          }}
+        ></ParallaxLayer>
+        <ParallaxLayer offset={1} speed={0.6} factor={1.5}>
+          <Content />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={1.5} speed={0.6} factor={1.5}>
+          <Segments />
+        </ParallaxLayer>
+        <ParallaxLayer offset={width > 700 ? 2 : 2.7}>
+          <Footer />
         </ParallaxLayer>
       </Parallax>
     </div>
